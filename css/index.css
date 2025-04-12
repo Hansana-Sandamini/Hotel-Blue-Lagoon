@@ -4,59 +4,6 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-/* Hero Section with Background Animation */
-.hero-section {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  animation: changeBg 25s infinite linear;
-}
-
-@keyframes changeBg {
-  0% {
-    background-image: url("/assets/images/home-background-img-1.jpg");
-  }
-  20% {
-    background-image: url("/assets/images/home-background-img-2.jpg");
-  }
-  40% {
-    background-image: url("/assets/images/home-background-img-3.jpg");
-  }
-  60% {
-    background-image: url("/assets/images/home-background-img-4.jpg");
-  }
-  80% {
-    background-image: url("/assets/images/home-background-img-5.jpg");
-  }
-  100% {
-    background-image: url("/assets/images/home-background-img-1.jpg");
-  }
-}
-
-.hero-content {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 1px 0 black;
-}
-
-.hero-content h1 {
-  font-size: 4.2rem;
-  text-align: center;
-  font-weight: bold;
-}
-
-.hero-content p {
-  font-size: 1.8rem;
-}
-
-/* Navbar Styles */
 .navbar {
   background: #011e3a !important;
   padding: 15px 30px;
