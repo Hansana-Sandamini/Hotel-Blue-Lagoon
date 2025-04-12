@@ -1,7 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section with Background Animation */
+.hero-section {
   height: 100vh;
+  width: 100%;
+  position: relative;
   background-size: cover;
   background-position: center;
   animation: changeBg 25s infinite linear;
@@ -28,8 +35,30 @@ body {
   }
 }
 
+.hero-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.hero-content h1 {
+  font-size: 4.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+}
+
+/* Navbar Styles */
 .navbar {
-  background: rgba(0, 0, 0, 0.7) !important;
+  background: #011e3a !important;
   padding: 15px 30px;
 }
 
@@ -48,7 +77,7 @@ body {
 
 .navbar-nav .nav-link:hover {
   color: #ffcc00 !important;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #22282e;
   border-radius: 5px;
 }
 
@@ -73,4 +102,84 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Services Section */
+.services-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.services-section h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card .fa-3x {
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .fa-3x {
+  transform: scale(1.1);
+}
+
+.service-card .card-title {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.service-card .card-text {
+  color: #7f8c8d;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+.text-success {
+  color: #28a745 !important;
+}
+.text-info {
+  color: #17a2b8 !important;
+}
+.text-warning {
+  color: #ffc107 !important;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+.text-secondary {
+  color: #6c757d !important;
 }
