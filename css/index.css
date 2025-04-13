@@ -4,6 +4,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+/* Navbar Styles */
 .navbar {
   background: #011e3a !important;
   padding: 15px 30px;
@@ -49,4 +50,33 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Footer */
+footer {
+  background: #011e3a !important;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-links a {
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links i:hover {
+  color: aqua;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  color: aqua;
 }
