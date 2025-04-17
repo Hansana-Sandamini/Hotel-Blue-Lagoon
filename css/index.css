@@ -4,6 +4,11 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
 /* Navbar Styles */
 .navbar {
   background: #011e3a !important;
