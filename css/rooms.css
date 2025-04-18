@@ -68,3 +68,13 @@
   color: white;
   transform: translateY(-2px);
 }
+
+.btn-view-all-rooms {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-view-all-rooms:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.3);
+}
