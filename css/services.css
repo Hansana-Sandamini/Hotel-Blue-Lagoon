@@ -76,3 +76,11 @@
 .text-secondary {
   color: #6c757d !important;
 }
+
+/* Testimonials */
+.testimonial-card {
+  padding: 30px;
+  border-radius: 10px;
+  background: rgb(253, 241, 218);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
