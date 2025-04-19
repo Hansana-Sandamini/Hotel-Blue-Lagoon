@@ -13,19 +13,31 @@ p {
 .navbar {
   background: #011e3a !important;
   padding: 15px 30px;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  width: 100%;
 }
 
 .navbar-brand {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff !important;
+  padding-right: 40px;
+  margin-right: 40px;
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white !important;
   padding: 10px 15px;
   transition: 0.3s ease-in-out;
+}
+
+.navbar-nav {
+  gap: 10px;
 }
 
 .navbar-nav .nav-link:hover {
